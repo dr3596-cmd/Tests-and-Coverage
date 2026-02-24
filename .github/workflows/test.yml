@@ -21,12 +21,10 @@ jobs:
       - name: Install dependencies
         run: |                                     
           python -m pip install --upgrade pip
+          pip install pytest          
           if [ -f requirements.txt ]; then 
             pip install -r requirements.txt        
-          fi                                        
-
-      - name: Run tests
-        run: pytest                                 
+          fi                                                                        
         
 	# your task: figure out the remaining steps 
 	# that match your selected language. 
