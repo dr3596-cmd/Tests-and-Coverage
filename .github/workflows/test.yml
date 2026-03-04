@@ -27,14 +27,6 @@ jobs:
           fi
 
       - name: Run tests
-		run: |
+        run: |
           # Discover and run all tests in the tests/ directory
-          pytest tests/ -v                                                                       
-        
-# your task: figure out the remaining steps 
-	# that match your selected language. 
-	# Hint: follow slide 11 for inspiration
-	# You should first find an action that sets up the environment
-	# for your selected programming language. 
-	# You should then set up the steps to run, similar to how you run
-	# them locally
+          pytest tests/ -v
