@@ -24,9 +24,14 @@ jobs:
           pip install pytest          
           if [ -f requirements.txt ]; then 
             pip install -r requirements.txt        
-          fi                                                                        
+          fi
+
+      - name: Run tests
+        run: |
+          # Discover and run all tests in the tests/ directory
+          pytest tests/ -v                                                                       
         
-	# your task: figure out the remaining steps 
+# your task: figure out the remaining steps 
 	# that match your selected language. 
 	# Hint: follow slide 11 for inspiration
 	# You should first find an action that sets up the environment
